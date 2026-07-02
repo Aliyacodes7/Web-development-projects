@@ -1,0 +1,118 @@
+DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+    <h1>Admission form</h1>
+    </header>
+  
+  <main>
+    
+    <form action="/action.php">
+    <h2>Personal information</h2> 
+    Name: 
+    <input type="text" placeholder="Enter name">
+    <br> 
+    Date of birth: 
+    <input type="date" placeholder="dd/mm/yyyy">
+    <br>
+    <label for="101">
+    <input type="radio" value="Female" name="gender" id="101">Female
+    </label>
+    <label for="102">
+    <input type="radio" value="Male" name="gender" id="102">Male
+    </label>
+    <br>
+    Nationality:
+            <select name="nationality" id="nationality">
+                <option value="Indian">Indian </option>
+                <option value="korean">korean </option>
+                <option value="chinese">chinese </option>
+                <option value="american">american </option>
+            </select>  
+    <br>
+    <hr>         
+    <h2>Contact details</h2>
+    Email Id:
+    <input type="email" placeholder="Email id" required>
+    <br>
+    Phone number:
+    <input type="tel" pattern="[0-9]{10}"
+    placeholder="enter valid mobile number" required>
+    <br>
+    Pin code:
+    <input type="number" placeholder="Enter valid pin code">
+    <br>
+    <hr>
+    <h2>Academics</h2>
+    <table> 
+    <thead>
+    <caption>High school(10th)</caption>
+    <tr>
+     <th>Board</th>
+     <th>Percentage</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td> <input type="text" placeholder="type"</td>
+      <td><input type="number" placeholder="type"</td>
+    </tr>
+    </tbody>
+    </table>
+    <br>
+    <table>
+    <thead>
+    <caption>Junior college(12th)</caption>
+     <tr>
+     <th>Board</th>
+     <th>Percentage</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td> <input type="text" placeholder="type"</td>
+      <td><input type="number" placeholder="type"</td>
+    </tr>
+    </tbody>
+    </table>
+    <br>
+    <hr>
+    <h2>Course Details</h2>
+    Department:
+                <select name="department" id="department">
+                <option value="computer science">computer science</option>
+                <option value="artificial intelligence">artificial intelligence</option>
+                <option value="cybersecurity">cybersecurity </option>
+                <option value="data science">data science </option>
+            </select>  
+    <br> <hr>
+    <h2>Declaration</h2>
+    <label for="id1">
+    <input type="checkbox" value="d1" name="declare" id="id1">
+    All the information filled are true to my knowledge.
+    </label>
+    <br>
+    <label for="id2">
+    <input type="checkbox" value="d2" name="declare" id="id2">
+    Any false information filled will be my fault.
+    </label>
+    <br> <hr> 
+    <label for="11">
+    <input type="radio" value="save" name="done" id="11">Save
+    </label>
+    <br>
+    <label for="12">
+    <input type="radio" value="Reset" name="done" id="12">Reset
+    </label>
+
+  </form>
+  </main> <br> <hr>
+  <footer>
+   All rights reserved
+  </footer>
+  </body>
+             </html>
